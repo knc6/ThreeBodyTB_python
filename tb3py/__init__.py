@@ -10,6 +10,7 @@ try:
            stderr=subprocess.STDOUT).communicate()
 except: out = ""
 
+"""
 #check if Julia has the correct version
 hasjulia = ( ("julia version 1.6" in str(out)) or
              ("julia version 1.5" in str(out)) or
@@ -68,3 +69,4 @@ if not os.path.exists("intro_message.txt"):
 #print("exec(open(\"quickstart.py\").read())")
 
 
+"""
