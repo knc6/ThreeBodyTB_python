@@ -152,7 +152,7 @@ print("My julia command : ", julia_cmd)
 
 # install
 sysimage = os.path.join(
-    os.environ["HOME"], "julia", "sysimages", "sys_threebodytb.so"
+    os.environ["HOME"], ".julia", "sysimages", "sys_threebodytb.so"
 )
 print("sysimage", sysimage)
 if not os.path.isfile(sysimage):
