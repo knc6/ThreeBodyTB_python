@@ -1,5 +1,7 @@
-import os
+"""Module to run tb3py."""
 
+import os
+from julia.api import Julia
 sysimage = os.path.join(
     os.environ["HOME"], ".julia", "sysimages", "sys_threebodytb.so"
 )
@@ -11,7 +13,6 @@ julia_cmd = mpath = os.path.join(
     "julia",
 )
 
-from julia.api import Julia
 
 jlsession = Julia(runtime=julia_cmd, compiled_modules=False, sysimage=sysimage)
 jlsession.eval("using Suppressor")  # suppress output
