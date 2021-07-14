@@ -21,9 +21,9 @@ jobs:
         python -m pip install --upgrade pip
         pip install flake8 pytest pycodestyle pydocstyle codecov pytest-cov coverage 
         python -m pip install numpy
-        python setup.py install
-        coverage run -m pytest
-        coverage report -m
+        #python setup.py install
+        #coverage run -m pytest
+        #coverage report -m
 
     - name: Lint
       run: |
