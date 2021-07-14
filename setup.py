@@ -50,6 +50,7 @@ setup(
         "requests>=2.26.0",
         "numpy>=1.19.5",
         "julia>=0.5.6",
+        "jarvis-tools",
     ],
     extras_require={
         "jarvis-tools": ["jarvis-tools"],
